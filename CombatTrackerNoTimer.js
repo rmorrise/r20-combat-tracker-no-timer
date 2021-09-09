@@ -724,6 +724,7 @@ var CombatTracker = CombatTracker || (function() {
         let time = config_time;
 
         if(token && state[state_name].config.timer.token_timer){
+			/*
             timerObj = createObj('text', {
                 text: 'Timer: ' + time,
                 font_size: state[state_name].config.timer.token_font_size,
@@ -732,6 +733,7 @@ var CombatTracker = CombatTracker || (function() {
                 pageid: token.get('pageid'),
                 layer: 'gmlayer'
             });
+			*/
         }
 
         intervalHandle = setInterval(() => {
@@ -745,7 +747,7 @@ var CombatTracker = CombatTracker || (function() {
             });
 
             if(state[state_name].config.timer.chat_timer && (time === config_time || config_time/2 === time || config_time/4 === time || time === 10 || time === 5)){
-                makeAndSendMenu('', 'Time Remaining: ' + time);
+                //makeAndSendMenu('', 'Time Remaining: ' + time);
             }
 
             if(time <= 0){
