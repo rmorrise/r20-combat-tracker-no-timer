@@ -736,6 +736,7 @@ var CombatTracker = CombatTracker || (function() {
 			*/
         }
 
+/*
         intervalHandle = setInterval(() => {
             if(paused) return;
 
@@ -759,6 +760,7 @@ var CombatTracker = CombatTracker || (function() {
 
             time--;
         }, 1000);
+		*/
     },
 
     stopTimer = () => {
